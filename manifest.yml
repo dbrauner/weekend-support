@@ -1,29 +1,29 @@
 --- 
 applications: 
-#   - 
-#     buildpack: nodejs_buildpack
-#     env: 
-#     #   SAP_JWT_TRUST_ACL: "[{\"clientid\" : \"*\", \"identityzone\" : \"*\"}]"
-#       TENANT_HOST_PATTERN: ^(.*)-weekend.cfapps.sap.hana.ondemand.com
-#       destinations: >
-#         [
-#             {
-#                 "name":"service-destination", 
-#                 "url" :"https://weekend-backend.cfapps.sap.hana.ondemand.com", 
-#                 "forwardAuthToken": true
-#             }, 
-#             {
-#                 "name":"ui-destination", 
-#                 "url" :"https://weekend-ui.cfapps.sap.hana.ondemand.com", 
-#                 "forwardAuthToken": true
-#             }
-#         ]
-#     host: weekend
-#     memory: 128M
-#     name: approuter-ws
-#     path: approuter
-#     services: 
-#       - uaa-weekend
+   -
+     buildpack: nodejs_buildpack
+     env:
+     #   SAP_JWT_TRUST_ACL: "[{\"clientid\" : \"*\", \"identityzone\" : \"*\"}]"
+       TENANT_HOST_PATTERN: ^(.*)-weekend.cfapps.sap.hana.ondemand.com
+       destinations: >
+         [
+             {
+                 "name":"service-destination",
+                 "url" :"https://weekend-backend.cfapps.sap.hana.ondemand.com",
+                 "forwardAuthToken": true
+             },
+             {
+                 "name":"ui-destination",
+                 "url" :"https://weekend-ui.cfapps.sap.hana.ondemand.com",
+                 "forwardAuthToken": true
+             }
+         ]
+     host: weekend
+     memory: 128M
+     name: approuter-ws
+     path: approuter
+     services:
+       - uaa-weekend
 
   - 
     name: weekend-backend
