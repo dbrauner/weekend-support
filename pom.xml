@@ -35,50 +35,64 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+		<dependency>
 			<groupId>com.sap.xs2.security</groupId>
 			<artifactId>security-commons</artifactId>
-			<version>0.22.2</version>
+			<version>0.33.18</version>
 		</dependency>
 		<dependency>
 			<groupId>com.sap.xs2.security</groupId>
 			<artifactId>java-container-security</artifactId>
-			<version>0.22.2</version>
+			<version>0.33.18</version>
 		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>org.springframework.security</groupId>-->
+			<!--<artifactId>spring-security-jwt</artifactId>-->
+			<!--<version>1.0.8.RELEASE</version>-->
+		<!--</dependency>-->
 		<dependency>
-			<groupId>org.springframework.security</groupId>
-			<artifactId>spring-security-jwt</artifactId>
-			<version>1.0.8.RELEASE</version>
+			<groupId>org.springframework.security.oauth.boot</groupId>
+			<artifactId>spring-security-oauth2-autoconfigure</artifactId>
+			<version>2.0.0.RELEASE</version>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.security.oauth</groupId>
-			<artifactId>spring-security-oauth2</artifactId>
-			<version>2.2.0.RELEASE</version>
-		</dependency>
-		<dependency>
-			<groupId>com.unboundid.components</groupId>
-			<artifactId>json</artifactId>
-			<version>1.0.0</version>
-		</dependency>
-		<dependency>
-			<groupId>com.sap.security.nw.sso.linuxx86_64.opt</groupId>
-			<artifactId>sapjwt.linuxx86_64</artifactId>
-			<version>1.0.0</version>
-		</dependency>
-		<dependency>
-			<groupId>com.sap.security.nw.sso.ntamd64.opt</groupId>
-			<artifactId>sapjwt.ntamd64</artifactId>
-			<version>1.0.0</version>
-		</dependency>
-		<dependency>
-			<groupId>com.sap.security.nw.sso.linuxppc64.opt</groupId>
-			<artifactId>sapjwt.linuxppc64</artifactId>
-			<version>1.0.0</version>
-		</dependency>
-		<dependency>
-			<groupId>com.sap.security.nw.sso.darwinintel64.opt</groupId>
-			<artifactId>sapjwt.darwinintel64</artifactId>
-			<version>1.0.0</version>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>com.sap.xs2.security</groupId>-->
+			<!--<artifactId>security-commons</artifactId>-->
+			<!--<version>0.30.3</version>-->
+		<!--</dependency>-->
+		<!--<dependency>-->
+			<!--<groupId>org.springframework.security.oauth</groupId>-->
+			<!--<artifactId>spring-security-oauth2</artifactId>-->
+			<!--<version>2.2.0.RELEASE</version>-->
+		<!--</dependency>-->
+		<!--<dependency>-->
+			<!--<groupId>com.unboundid.components</groupId>-->
+			<!--<artifactId>json</artifactId>-->
+			<!--<version>1.0.0</version>-->
+		<!--</dependency>-->
+		<!--<dependency>-->
+			<!--<groupId>com.sap.security.nw.sso.linuxx86_64.opt</groupId>-->
+			<!--<artifactId>sapjwt.linuxx86_64</artifactId>-->
+			<!--<version>1.0.0</version>-->
+		<!--</dependency>-->
+		<!--<dependency>-->
+			<!--<groupId>com.sap.security.nw.sso.ntamd64.opt</groupId>-->
+			<!--<artifactId>sapjwt.ntamd64</artifactId>-->
+			<!--<version>1.0.0</version>-->
+		<!--</dependency>-->
+		<!--<dependency>-->
+			<!--<groupId>com.sap.security.nw.sso.linuxppc64.opt</groupId>-->
+			<!--<artifactId>sapjwt.linuxppc64</artifactId>-->
+			<!--<version>1.0.0</version>-->
+		<!--</dependency>-->
+		<!--<dependency>-->
+			<!--<groupId>com.sap.security.nw.sso.darwinintel64.opt</groupId>-->
+			<!--<artifactId>sapjwt.darwinintel64</artifactId>-->
+			<!--<version>1.0.0</version>-->
+		<!--</dependency>-->
 	</dependencies>
 
 	<build>

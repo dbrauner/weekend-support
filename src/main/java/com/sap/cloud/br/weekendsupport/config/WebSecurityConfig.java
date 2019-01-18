@@ -21,10 +21,10 @@ import com.sap.xs2.security.commons.SAPOfflineTokenServicesCloud;
 @EnableResourceServer
 public class WebSecurityConfig extends ResourceServerConfigurerAdapter {
 
-	private static final String DISPLAY_SCOPE_SOM = "UserRole";
-	private static final String DISPLAY_SCOPE_SOC = "AdminRole";
+	private static final String DISPLAY_SCOPE_SOM = "UserScope";
+	private static final String DISPLAY_SCOPE_SOC = "AdminScope";
 	public static final String REGEX_TENANT_INDEX = "(!t\\d+)?.";
-	private static final String XSAPPNAME = "weekend-support";
+	private static final String XSAPPNAME = "weekend-i844796";
 	public static final String USER_SCOPE = XSAPPNAME + "." + DISPLAY_SCOPE_SOM;
 	public static final String ADMIN_SCOPE = XSAPPNAME + "." + DISPLAY_SCOPE_SOC;
 
@@ -32,6 +32,8 @@ public class WebSecurityConfig extends ResourceServerConfigurerAdapter {
 
 	@Override
 	public void configure(HttpSecurity http) throws Exception { //
+
+//		http.authorizeRequests().antMatchers("/*").permitAll();
 
 		String hasScopeSOMAdmin = "#oauth2.hasScopeMatching('" + XSAPPNAME + REGEX_TENANT_INDEX + DISPLAY_SCOPE_SOM
 				+ "')";
