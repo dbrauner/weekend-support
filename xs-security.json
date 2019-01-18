@@ -1,0 +1,33 @@
+{
+    "xsappname": "weekend-support",
+    "tenant-mode": "shared",
+    "scopes": [
+        {
+            "name": "$XSAPPNAME.UserScope",
+            "description": ""
+        },
+        {
+            "name": "$XSAPPNAME.AdminScope",
+            "description": ""
+        }
+  ],
+    "role-templates": [
+    {
+            "name": "UserRole",
+            "description": "",
+            "scope-references": [
+             "$XSAPPNAME.UserScope"
+              ] 
+              
+    },
+    {
+            "name": "AdminRole",
+            "description": "SOC Administrator Role Template",
+            "scope-references": [
+             "$XSAPPNAME.AdminScope"
+              ] 
+              
+              
+    }
+  ]
+}

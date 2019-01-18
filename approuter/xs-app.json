@@ -1,0 +1,13 @@
+{
+    "routes": [
+    {
+    "source": "/service",
+      "target": "/",
+      "destination": "service-destination"
+    },
+    {
+    "source": "/",
+      "target": "/",
+      "destination": "ui-destination"
+    }]
+  }
